@@ -29,9 +29,8 @@ public class Calendar {
 		cal.printSampleCalendar();
 		/*
 		 * int[] maxDays = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-		 * 
-		 * System.out.println(maxDays[a-1] + "일 입니다."); System.out.printf(
-		 * "%d월은 %d일 입니다.\n", a, maxDays[a-1]);
+		 * System.out.println(maxDays[a-1] + "일 입니다."); 
+		 * System.out.printf( "%d월은 %d일 입니다.\n", a, maxDays[a-1]);
 		 */
 
 		/*

@@ -1,7 +1,5 @@
 import java.util.Scanner;
 
-import javax.swing.plaf.synth.SynthSeparatorUI;
-
 public class CalendarWhile {
 	private static final int[] MAX_DAYS =  {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 	
@@ -9,27 +7,19 @@ public class CalendarWhile {
 		return MAX_DAYS[month - 1];
 	}
 	
-	public static void main(String args[]){
-		String PROMPT = "cal> ";
-		Scanner scanner = new Scanner(System.in);
-		CalendarWhile cal = new CalendarWhile();
-		
-		int month = 1;
-		
-		while(true){
-			System.out.println("월을 입력하세요");
-			System.out.print(PROMPT);
-			month = scanner.nextInt();
-			if(month == -1){
-				break;
-			}
-			if(month > 12){
-				continue;
-			}
-			System.out.printf("%d 월은 %d 일입니다", month, cal.getMaxDaysOfMonth(month));
-			}
-		System.out.println("Bye~~");
-		scanner.close();
+	public void printCalendar(int year, int month) {
+		System.out.printf("           <<%4d 년%3d월>>\n", year, month);
+		System.out.println("  SU MO TU WE TH FR SA");
+		System.out.println("-------------------------------");
+		int maxday = getMaxDaysOfMonth(month);
+		for(int i = 1; i <= maxday; i++){
+		System.out.printf("%4d",i);
+		if(i %7 == 0){
+			System.out.println();
+		}
+		}
+		System.out.println();
 	}
+		
 	
 }

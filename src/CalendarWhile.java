@@ -19,6 +19,7 @@ public class CalendarWhile {
 		while(true){
 			System.out.println("월을 입력하세요");
 			System.out.print(PROMPT);
+			month = scanner.nextInt();
 			if(month == -1){
 				break;
 			}

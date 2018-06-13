@@ -8,5 +8,6 @@ public class Calendar_review {
 		int month = scanner.nextInt();
 		//System.out.println(days[month-1]);
 		System.out.printf("%d 월은 %d 일입니다.", month, days[month-1]);
+		scanner.close();
 	}
 }

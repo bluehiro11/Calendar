@@ -13,6 +13,6 @@ public class Sum_review {
 		b = Integer.parseInt(s2);
 		
 		System.out.printf("%d 와 %d 의 합은 %d 입니다.\n",a,b,a+b);
-		
+		scanner.close();
 	}
 }
